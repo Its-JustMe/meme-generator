@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+:root {
+    --light-color: #f5f5f5; --dark-color: #05051f;
+    --primary-color: #50abf7; --secondary-color: #fa4df1;
+    --gradient-color: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    --subheading-font-size: clamp(2.5vw, 3.5em, 2em);
+    --paragraph-font-size: clamp(2vw, 2.3em, 1.3em);
+    --defalt-width: clamp(65vw, 500px, 350px);
+    --btn-width: clamp(3vw, 4em, 3.5em)
+}
