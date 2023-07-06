@@ -42,9 +42,7 @@ export function updateDetails (url: string, title: string, author: string): void
 }
 
 /** 
- * Função disparada quando
- * o usuário sai da página do projeto
- * 
+ * Função disparada quando o usuário sai da página do projeto 
  * @returns { string } Altera o título da página
  */
 export const windowBlur = (): string => document.title = 'Go back :(';
