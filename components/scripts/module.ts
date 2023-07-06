@@ -3,7 +3,9 @@
 /** 
  * Função assíncrona que realiza a requisição para a API e retorna um meme aleatório.
  * Na função é utilizado o operador "await" para aguardar a resposta 
- * da chamada de API feita com a função "fetch" para a URL especificada. 
+ * da chamada de API feita com a função "fetch" para a URL especificada, que em seguida
+ * é convertida em json. Após isso, é feita uma chamada para a função updateDetails(), 
+ * passando os dados da resposta como parâmetros
 */
 export async function generateMeme (): Promise<void> {
     /**url da API */
