@@ -1,4 +1,4 @@
-import { generateMeme, windowBlur } from "./modal";
+import { generateMeme, windowBlur } from "./module";
 
 window.onload = () => {
     const generate_btn: HTMLButtonElement = document.querySelector('.generate-btn') as HTMLButtonElement;
