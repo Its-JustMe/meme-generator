@@ -16,7 +16,6 @@ export async function generateMeme (): Promise<void> {
 }
 
 /** Função que atualiza a página com os dados recebidos da API
- * 
  * @param url url da imagem do meme
  * 
  * @param title Título do meme/postagem
