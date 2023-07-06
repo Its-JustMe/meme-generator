@@ -1,12 +1,14 @@
 // Arquivo que contém as funções principais do projeto
+
 /** 
  * Função que realiza a requisição para a API 
  * e retorna um novo meme gerado
 */
-export function generateMeme (): void {
-    fetch(
-        'https://meme-api.com/gimme'
-    ).then(
+export async function generateMeme (): Promise<void> {
+    /**url da API */
+    const url: string = 'https://meme-api.com/gimme';
+
+    await fetch(url).then(
         (res: Response) => res.json().then(
             (data: Record<string, string>) => updateDetails(data.url, data.title, data.author)
         )
