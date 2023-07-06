@@ -1,8 +1,7 @@
 // Arquivo que contém as funções principais do projeto
 
 /** 
- * Função assíncrona que realiza a requisição para a API 
- * e retorna um meme aleatório.
+ * Função assíncrona que realiza a requisição para a API e retorna um meme aleatório.
  * Na função é utilizado o operador "await" para aguardar a resposta 
  * da chamada de API feita com a função "fetch" para a URL especificada. 
  * Dentro da função "then" encadeada, o método "json()" é chamado na resposta 
