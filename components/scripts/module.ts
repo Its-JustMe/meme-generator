@@ -4,11 +4,6 @@
  * Função assíncrona que realiza a requisição para a API e retorna um meme aleatório.
  * Na função é utilizado o operador "await" para aguardar a resposta 
  * da chamada de API feita com a função "fetch" para a URL especificada. 
- * Dentro da função "then" encadeada, o método "json()" é chamado na resposta 
- * para converter os dados da resposta em formato JSON.
- * O resultado da conversão é um objeto JavaScript que contém informações sobre o meme, 
- * incluindo a URL da imagem, o título e o autor, que são em seguida passados como
- * parâmetros para outra função chamada updateDetails()
 */
 export async function generateMeme (): Promise<void> {
     /**url da API */
