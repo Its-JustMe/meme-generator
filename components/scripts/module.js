@@ -1,5 +1,4 @@
 "use strict";
-// Arquivo que contém as funções principais do projeto
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -38,13 +37,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var exports = {};
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * Função assíncrona que realiza a requisição para a API e retorna um meme aleatório.
- * Na função é utilizado o operador "await" para aguardar a resposta
- * da chamada de API feita com a função "fetch" para a URL especificada, que em seguida
- * é convertida em json e então é feita uma chamada para a função updateDetails(), passando
- * os dados de resposta da API como parâmetros
-*/
 function generateMeme() {
     return __awaiter(this, void 0, void 0, function () {
         var url, response, data;
@@ -66,17 +58,6 @@ function generateMeme() {
 }
 const _generateMeme = generateMeme;
 export { _generateMeme as generateMeme };
-/**
- * Função que atualiza a página com os dados recebidos da API,
- * alterando o conteúdo dos elementos com os dados recebidos
- * da API, passados como parâmetros
- *
- * @param url url da imagem do meme
- *
- * @param title Título do meme/postagem
- *
- * @param author Nome do autor do meme
-*/
 function updateDetails(url, title, author) {
     var meme_img = document.querySelector('.meme-generator > img');
     var meme_title = document.querySelector('.meme-title');
@@ -87,12 +68,6 @@ function updateDetails(url, title, author) {
 }
 const _updateDetails = updateDetails;
 export { _updateDetails as updateDetails };
-/**
- * Função disparada quando o usuário sai da página do projeto.
- * Utilizando operação ternária, ela verifica se o usuário está
- * na janela atual ou não e atualiza o título do documento
- * @returns Altera o título da página
- */
 var windowBlur = function () {
     return document.visibilityState === 'hidden'
         ? document.title = 'Go back :('
