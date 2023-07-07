@@ -42,7 +42,12 @@ export function updateDetails (url: string, title: string, author: string): void
 }
 
 /** 
- * Função disparada quando o usuário sai da página do projeto 
- * @returns { string } Altera o título da página
+ * Função disparada quando o usuário sai da página do projeto.
+ * Utilizando operação ternária, ela verifica se o usuário está
+ * na janela atual ou não e atualiza o título do documento
+ * @returns Altera o título da página
  */
-export const windowBlur = (): string => document.title = 'Go back :(';
+export const windowBlur = (): string => 
+    document.visibilityState === 'hidden' 
+        ? document.title = 'Go back :(' 
+        : document.title = 'Memes Generator';

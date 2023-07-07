@@ -1,17 +1,20 @@
 /*Importando outros Estilos*/
 @import './reset.css';
 
-body { background-image: url('../imgs/galaxy.gif'); background-size: cover;color: var(--light-color); }
-
+body { background-image: url('../imgs/galaxy.gif'); 
+    background-size: cover;
+    color: var(--light-color); 
+}
 .meme-generator {
     font-family: "Typo Formal";
     background-color: var(--dark-color); 
     width: var(--defalt-width);
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;   
     margin: auto;
 }
 .meme-generator > img {
+    height: 20em;
     object-fit: cover;
     margin-top: 2em; margin-bottom: 2em;
 }
@@ -19,6 +22,7 @@ body { background-image: url('../imgs/galaxy.gif'); background-size: cover;color
     padding: .5em 1.25em;
     margin: 1.5em auto;
     font-size: var(--paragraph-font-size);
+    font-family: "Typo Formal";
     color: var(--dark-color);
     background: var(--gradient-color);
     border-radius: 1.25em;
@@ -33,4 +37,7 @@ body { background-image: url('../imgs/galaxy.gif'); background-size: cover;color
     margin: 0.5em;
     font-size: var(--paragraph-font-size);
 }
-.meme-title { font-size: var(--subheading-font-size); }
+.meme-title { 
+    font-size: var(--subheading-font-size);
+    font-family: Arial, Helvetica, sans-serif;
+}
