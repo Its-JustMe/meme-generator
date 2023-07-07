@@ -1,6 +1,6 @@
 <h1>Meme Generator</h1>
 <h2>Um gerador de memes aleatórios utilizando a Meme API</h2>
-
+#
 <h3>O que é esse projeto?</h3>
 <p>
     Este projeto consiste em um simples gerador de
@@ -8,7 +8,7 @@
     memes aleatórios ao pressionar o botão de
     gerar o meme.
 </p>
-
+#
 <h3>Tecnologias utilizadas</h3>
 <ul>
     <li> 
@@ -21,7 +21,7 @@
         Utilizada para buscar e mostrar os memes para o usuário.
     </li>
 </ul>
-
+#
 <h3>Outras informações</h3>
 <ul>
     <li> Status: <em>Finalizado</em>
