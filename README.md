@@ -1,6 +1,5 @@
 <h1>Meme Generator</h1>
 <h2>Um gerador de memes aleatórios utilizando a Meme API</h2>
-<hr>
 <h3>O que é esse projeto?</h3>
 <p>
     Este projeto consiste em um simples gerador de
