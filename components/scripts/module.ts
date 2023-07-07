@@ -7,15 +7,12 @@
  * é convertida em json e então é feita uma chamada para a função updateDetails(), passando
  * os dados de resposta da API como parâmetros
 */
-export async function generateMeme (): Promise<void> {
-    /**url da API */
+export async function generateMeme(): Promise<void> {
     const url: string = 'https://meme-api.com/gimme';
 
-    await fetch(url).then(
-        (res: Response) => res.json().then(
-            (data: Record<string, string>) => updateDetails(data.url, data.title, data.author)
-        )
-    ); 
+    const response: Response = await fetch(url);
+    const data: Record<string, string> = await response.json();
+    updateDetails(data.url, data.title, data.author);
 }
 
 /** 
